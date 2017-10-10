@@ -47,7 +47,7 @@ I start by preparing "object points", which will be the (x, y, z) coordinates of
 
 I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result: 
 
-![alt text][[image11] ![alt text][image1]
+![alt text][image11] ![alt text][image1]
 
 ### Pipeline (single images)
 
@@ -110,7 +110,7 @@ For the video, I mostly used the same pipeline that I had for the images. In add
 * To reduce wobbliness as well as to cover for frames where I did not obtain good lane identification, I used smoothing of the lanes across frames with valid identification.
 * I also had checks on the results within each frame based on if the lanes were reasonably parallel and if they yielded reasonable radius of curvature.
 
-Here's a [link to my video result](./output_project_video.mp4)
+Here's a [link to my video result](./out_project_video.mp4)
 
 ![alt text][video1]
 ---
