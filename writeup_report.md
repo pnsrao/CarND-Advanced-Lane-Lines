@@ -1,5 +1,3 @@
----
-
 **Advanced Lane Finding Project**
 
 The goals / steps of this project are the following:
@@ -16,12 +14,12 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./output_images/undistort_camera_cal.jpg "Undistorted chessboard image"
-[image11]: ./camera_cal/caliration1.jpg "Distorted chessboard image"
+[image11]: ./camera_cal/calibration1.jpg "Distorted chessboard image"
 [image2]: ./test_images/test2.jpg "Distorted test image"
 [image21]: ./output_images/w_test2.jpg "Undistorted test image"
 [image3]: ./output_images/threshold_gradient.jpg "Threshold_gradient"
-[image4]: ./output_images/persp_transform.jpg "Perspective Transform"
-[image5]: ./output_images/polyfit.jpg "Polyfit"
+[image4]: ./output_images/persp_transform.png "Perspective Transform"
+[image5]: ./output_images/polyfit.png "Polyfit"
 [image6]: ./output_images/final_image.jpg "Output"
 [video1]: ./out_project_video.mp4 "Video"
 
@@ -47,7 +45,7 @@ I start by preparing "object points", which will be the (x, y, z) coordinates of
 
 I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result: 
 
-![alt text][image11] ![alt text][image1]
+![alt text][image11]  ![alt text][image1]
 
 ### Pipeline (single images)
 
@@ -56,7 +54,7 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 To demonstrate this step, I will describe how I apply the distortion correction to one of the test images:
 
 Once having found the distortion coefficients and the camera matrix through the camera calibration process, these are used using the undistort function in opencv on the test image.The distorted and undistorted test images are shown below
-![alt text][image2] ![alt text][image21]
+![alt text][image2]  ![alt text][image21]
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
