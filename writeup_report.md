@@ -110,7 +110,6 @@ For the video, I mostly used the same pipeline that I had for the images. In add
 
 Here's a [link to my video result](./out_project_video.mp4)
 
-![alt text][video1]
 ---
 
 ### Discussion
